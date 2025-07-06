@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body.intro-page {
+    background: linear-gradient(to bottom, #cceeff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: opacity 1.5s ease;
+  }
+  
+  .intro-container {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .cinnamoroll {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+ .intro-container h1 {
+    font-size: 2.5rem;
+    color: #5aaaff;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #a3d5ff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #80c1ff;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  /* Fade out effect */
+  .fade-out {
+    opacity: 0;
+  }
+
+  /*letter section*/
+  body {
+    background-color: #d0eaff; /* pastel blue base */
+   
+    background-repeat: repeat;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .letter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 500px;
+    margin: 50px auto;
+  }
+  
+  .letter-box {
+    text-align: center;
+  }
+  
+  .envelope {
+    display: inline-block;
+    padding: 18px 36px;
+    background-color: #ffd6ec;
+    color: #80c1ff;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid #bcd6f8;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  
+  .envelope:hover {
+    transform: scale(1.05);
+  }
+  
+  .letter {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+    background-color: #ffffff;
+    padding: 0 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+    color: #80c1ff;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  input[type="checkbox"]:checked ~ .letter {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 20px;
+  }
+
+  .letter-intro {
+    text-align: center;
+    margin: 50px auto 30px;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .letter-intro h2 {
+    font-size: 2rem;
+    color: #80c1ff;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .letter-intro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: rgba(44, 66, 128, 0.445);
+    font-family: 'Quicksand', sans-serif;
+    line-height: 3;
+  }
+
+
+  .letter-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .letter-box {
+    text-align: center;
+  }
+
+  .animated-header {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    animation: floatText 4s ease-in-out infinite;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes floatText {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeIn {
+    0%   { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /*flower section*/
+
+  .surprise-section {
+    text-align: center;
+    margin: 60px auto 40px;
+  }
+  
+  .surprise-note {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    color: #80c1ff;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .surprise-button {
+    display: inline-block;
+    background-color: #ffd6ec;
+    color: #2c3e50;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    animation: popIn 1s ease-out;
+  }
+  
+  .surprise-button:hover {
+    background-color: #80c1ff;
+    transform: scale(1.05);
+  }
+  
+  @keyframes popIn {
+    0%   { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }

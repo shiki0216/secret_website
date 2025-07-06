@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi Hon 💙</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="intro-page">
+  <div class="intro-container">
+    <img src="header_content.png" alt="Cinnamoroll" class="cinnamoroll" />
+    <h1>Hi Hon! 💖</h1>
+    <p>Click me to unlock your surprise!</p>
+    <button onclick="enterSite()">Click Me!</button>
+  </div>
+
+  <script>
+    function enterSite() {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "letter.html";
+      }, 1500); // time to wait for fade-out
+    }
+  </script>
+</body>
+</html>
